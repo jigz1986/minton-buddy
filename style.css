@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
     --w0:rgb(255, 255, 255);
     --w1: #cacaca;
@@ -8,10 +10,6 @@
     --or:#ea6500;
     --or10:#ea65007e;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap')
-
-{margin:0px;padding:0px;}
 
 html {background-color: var(--w1);}
 
