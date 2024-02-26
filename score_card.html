@@ -29,7 +29,11 @@
     </div>
       </nav>
   </header>
+   <!--###############################################################################################################################-->
 
+
+
+     <!-- Start :: Main Body Starts #########################################################-->
   <main>
     <h1> Singles Player Badminton ScoreCard App</h1>
    
@@ -47,14 +51,77 @@
 <button onclick="doubles15()">Doubles | 15 pts</button>
 <button onclick="doubles21()">Doubles | 21 pts</button>
 
-<div id="singles15" class="gameBox">Singles Game - 15 points </div>
-<div id="singles21" class="gameBox">Singles Game - 21 points </div>
-<div id="doubles15" class="gameBox">Doubles Game - 15 points</div>
-<div id="doubles21" class="gameBox">Doubles Game - 21 points</div>
 
 
+<!-- Form Singles 15 point Starts here -->
+<section id="s15section">
+  <div id="singles15" class="gameBox"><h2>Singles Game - 15 points</h2> 
+    <form id="s15iput" method="get">
+      <label for="P1S15" tooltip="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1S15" name="P1S15"><br><br>
+      <label for="P2S15">Last name:</label>
+      <input type="text" id="P2S15" name="P2S15"><br><br>
+        <button type="submit" formaction="/s15.html">Start Game</button>
+    </form>
+  </div>
+</section>
+
+<!-- Form Singles 21 point Starts here -->
+<section id="s21section">
+  <div id="singles21" class="gameBox"><h2>Singles Game - 21 points </h2>
+    <form id="s21iput" method="get">
+      <label for="P1S21" title="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1S21" name="P1S21"><br><br>
+      <label for="P2S21">Last name:</label>
+      <input type="text" id="P2S21" name="P2S21"><br><br>
+        <button type="submit" formaction="/s21.html">Start Game</button>
+    </form>
+  </div>
+</section>
+
+<!-- Form Doubles 15 point Starts here -->
+<section id="d15section">
+  <div id="doubles15" class="gameBox"><h2>Doubles Game - 15 points</h2>
+    <form id="d15iput" method="get">
+      <label for="P1T1D15" title="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1T1D15" name="P1T1D15"><br>
+      <label for="P2T1D15">Last name:</label>
+      <input type="text" id="P2T1D15" name="P2T1D15"><br><br>
+      <label for="P1T2D15" title="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1T2D15" name="P1T2D15"><br>
+      <label for="P2T2D15">Last name:</label>
+      <input type="text" id="P2T2D15" name="P2T2D15"><br><br>
+        <button type="submit" formaction="/s21.html">Start Game</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- Form Doubles 21 point Starts here -->
+<section id="d21section">
+  <div id="doubles21" class="gameBox"><h2>Doubles Game - 21 points</h2>
+    <form id="d21iput" method="get">
+      <label for="P1T1D21" title="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1T1D21" name="P1T1D21"><br>
+      <label for="P2T1D21">Last name:</label>
+      <input type="text" id="P2T1D21" name="P2T1D21"><br><br>
+      <label for="P1T2D21" title="1st Serve/Toss Winner">Player 1 name:</label>
+      <input type="text" id="P1T2D21" name="P1T2D21"><br>
+      <label for="P2T2D21">Last name:</label>
+      <input type="text" id="P2T2D21" name="P2T2D21"><br><br>
+        <button type="submit" formaction="/s21.html">Start Game</button>
+    </form>
+  </div>
+</section>
   </main>
+   <!--###############################################################################################################################-->
 
+
+
+
+
+   
   <script>
     const a = document.getElementById("singles15");
     const b = document.getElementById("singles21");

@@ -1,8 +1,19 @@
+:root {
+    --w0:rgb(255, 255, 255);
+    --w1: #cacaca;
+    --g1:#a8a8a8;
+    --g2:#a8a8a8;
+    --b1:#555555;
+    --b0:#252525;
+    --or:#ea6500;
+    --or10:#ea65007e;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap')
 
 {margin:0px;padding:0px;}
 
-html {background-color: #ea650010;}
+html {background-color: var(--w1);}
 
 * {
   margin: 0;
@@ -20,7 +31,7 @@ main {margin-top:100px;}
 	height:80px;
 	width:100%;
 position: fixed; left: 0; top: 0;
-background-color: #ea650020; display:flex;align-items:center;}
+background-color: var(--or10); display:flex;align-items:center;}
 
 #logoImage {width: 20%;
     display: inline-flex;
@@ -28,11 +39,11 @@ background-color: #ea650020; display:flex;align-items:center;}
     align-items: center;
     height: 80px;}
  
-#brand {display:flex;align-items:center; color: black; font-size:24px;margin-left:8px;}
+#brand {display:flex;align-items:center; color: var(--w0); font-size:24px;margin-left:8px;}
 
-a {text-decoration: none;	color: #ea6500;}
+a {text-decoration: none;	color:var(--w0);}
 
-.menu > a:hover > div {color: Black; border-bottom: 2px solid #1d1c1b;}
+.menu > a:hover > div {color: var(--b0) ; border-bottom: 2px solid #1d1c1b;}
 
 .menu {    width: 60%;
     height: 80px;
@@ -60,7 +71,7 @@ button {
 	
 		
 button:hover {
-        background-color:#ea6500;
+        background-color:var(--or);
         color:white;}
 	
 
@@ -72,6 +83,63 @@ button:hover {
         padding: 40px;
         align-items: center;
         font-size: 20px;
-        color: orange;
+        color: var(--or);
         border: 2px solid black;
     }
+
+
+#gobackhome {position: fixed;
+    right: 0;
+    top: 70px;
+    width: 180px;
+    height: 51px;
+    color: white;
+    background-color: var(--g2);}
+
+
+#topBoard {
+    margin:auto;
+/*    width: 900px; */
+    height: 100px;
+    align-items:center;
+    display: flex;
+    background-color: var(--g1);
+}
+
+#spacer {height: 40px;padding:0px; margin:0px;}
+
+div#vs {
+    padding: 8px;
+}
+
+#teambox {
+    width: 100%;
+    height: 75px;
+    margin:auto;
+    align-items:center; justify-content: flex-end;
+    display: inline-flex;
+}
+
+
+#playerbox {width: 75%;
+    height: 75px;
+    background-color: var(--b1); display: flex;
+    justify-content: flex-end;}
+
+
+#scorenumber {    display: inline-flex;
+    width: 75px;
+    height: 75px;
+    background-color: var(--w1);
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;}
+
+    #First {
+        width: 75%;
+        background-color: var(--b1);
+        display: inline-flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        align-items: end;
+        font-size: 30px;}
