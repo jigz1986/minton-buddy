@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Badminton Buddy | Online Badminton Score Keeper</title>
+ 	<link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+  
+  
+    <!-- Start :: Main navigation #########################################################-->
+    <header>
+      <nav>
+      <div id="navbar">
+      <div id="logoImage">
+      <a href="index.html"><div id="brand"><img src="images/logo.png" style="width:60px">Minton Buddy</div></a>
+      </div>
+  
+    <div class="menu">
+       <a href="score_card.html"><div class="items">Score Card</div></a>
+      <a href="#"><div class="items">Host a League</div></a>
+      <a href="#"><div class="items">Forum</div></a>
+      <a href="#"><div class="items">Contact</div></a>
+    </div>
+    </div>
+      </nav>
+  </header>
+
+  <main>
+    <h1> Singles Player Badminton ScoreCard App</h1>
+   
+<p>Choose on of the game type below:</p>
+<!--
+<div>
+<a href="s15.html"><button class="gametype">Singles 15pts</button></a>
+<a href="s21.html"><button class="gametype">Singles 21pts</button></a><br>
+<a href="d15.html"><button class="gametype">Doubles 15pts</button></a>
+<a href="d21.html"><button class="gametype">Doubles 21pts</button></a>
+</div> -->
+
+<button onclick="singles15()">Singles | 15 pts</button>
+<button onclick="singles21()">Singles | 21 pts</button>
+<button onclick="doubles15()">Doubles | 15 pts</button>
+<button onclick="doubles21()">Doubles | 21 pts</button>
+
+<div id="singles15" class="gameBox">Singles Game - 15 points </div>
+<div id="singles21" class="gameBox">Singles Game - 21 points </div>
+<div id="doubles15" class="gameBox">Doubles Game - 15 points</div>
+<div id="doubles21" class="gameBox">Doubles Game - 21 points</div>
+
+
+  </main>
+
+  <script>
+    const a = document.getElementById("singles15");
+    const b = document.getElementById("singles21");
+    const c = document.getElementById("doubles15");
+    const d = document.getElementById("doubles21");
+    
+    function singles15() {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+    }
+    
+    function singles21() {
+    a.style.display = "none";
+    b.style.display = "block";
+    c.style.display = "none";
+    d.style.display = "none";
+    }
+    
+    function doubles15() {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "block";
+    d.style.display = "none";
+    }
+    
+    function doubles21() {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "block";
+    }
+    </script>
+
+    </body>
+</html>

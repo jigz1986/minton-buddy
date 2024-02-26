@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap')
+
+{margin:0px;padding:0px;}
+
+html {background-color: #ea650010;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+
+}
+main {margin-top:100px;}
+
+#navbar {
+	height:80px;
+	width:100%;
+position: fixed; left: 0; top: 0;
+background-color: #ea650020; display:flex;align-items:center;}
+
+#logoImage {width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;}
+ 
+#brand {display:flex;align-items:center; color: black; font-size:24px;margin-left:8px;}
+
+a {text-decoration: none;	color: #ea6500;}
+
+.menu > a:hover > div {color: Black; border-bottom: 2px solid #1d1c1b;}
+
+.menu {    width: 60%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    right: 0;
+    justify-content: center;
+    margin-right: 60px;
+    align-items: center;}
+
+.items {
+    margin: 28px;
+    font-size: 20px;
+}
+
+
+	
+button {
+    height: 60px;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 20px;}
+	
+		
+button:hover {
+        background-color:#ea6500;
+        color:white;}
+	
+
+	
+    .gameBox {
+        display: none;
+        margin: 20px;
+        width: 500px;
+        padding: 40px;
+        align-items: center;
+        font-size: 20px;
+        color: orange;
+        border: 2px solid black;
+    }
