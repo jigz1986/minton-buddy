@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Badminton Buddy | Online Badminton Score Keeper</title>
+ 	<link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <!-- Start :: Main navigation #########################################################-->
+    <header>
+     <nav>
+  <div id="navbar">
+  <div id="logoImage">
+  <a href="index.html"><div id="brand"><img src="images/logo.png" style="width:60px">Minton Buddy</div></a>
+  </div>
+  <!-- Start :: Menu navigation #########################################################-->
+  <div class="menu">
+   <a href="score_card.html"><div class="items">Score Card</div></a>
+  <a href="#"><div class="items">Host a League</div></a>
+  <a href="#"><div class="items">Forum</div></a>
+  <a href="#"><div class="items">Contact</div></a>
+  </div>
+  </div>
+  </nav> 
+  </header>
+  <!-- End  :: Main navigation #########################################################-->
+  
+  
+  
+  <br><hr>
+  
+  
+  <main>
+  <!-- Start :: Game Type Input #########################################################-->
+  <section id="trail1">
+    <button id="SelectionS" Class="SelectGameType" onclick="ShowSingles()">Singles</button>
+    <button id="SelectionD" Class="SelectGameType" onclick="ShowDoubles()">Doubles</button>
+      </form>
+      </div>
+  </section>
+  <!-- End  :: Game Type Input #########################################################-->
+  
+  
+  <!-- Singles Game Div Start #################################################################################################################-->
+  <div id="singlesform15" style="background-color: rgba(0, 0, 0, 0.059); display:none;">
+      You have choosen Singles game of 15 Points. Or You may <a href="/trial.html">Start Over</a>.<br> 
+      Carry out the toss and find who will serve first. 
+      <form id="singlesGameStart" name="GameForm" >
+        Enter the name of Player 1 (1st Server):<input type="text" id="player1name" name="player1name" required><br>
+        Enter the name of Player 2(Lost Toss):<input type="text" id="player2name" name="player2name" required><br>
+        Choose Points : 
+        <input type="radio" id="15" name="points" value="15" required><label for="15">15</label>
+        <input type="radio" id="21" name="points" value="21" required><label for="21">21</label>
+        <br><button type="submit" formaction="/s.html">Start Game</button>
+      </form>
+  </div>
+  
+  
+  
+  
+  
+  <!-- Doubles Game Div Start #################################################################################################################-->
+  <div id="doublesform15" style="display:none; background-color: rgb(31, 226, 99);">
+      You have choosen Doubles game of 15 Points. OR You may <a href="/trial.html">Start Over</a>.<br> Carry out the
+      toss and find who will serve first. <br>
+      Now enter the player details. 
+      <form id="singlesGameStart" name="GameForm"> Enter
+              Team 1 Name                     :<input type="text" id="team1name"      name="team1name"      value="Alpha"><br>
+              Team 1 - Player 1 (1st Server) :<input type="text" id="player1T1name"  name="player1T1name"  required><br>
+              Team 1 - Player 2              :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
+              Team 2 Name                :<input type="text" id="team1name"      name="team1name"      value="Beta"><br>
+              Team 2 - Player 1              :<input type="text" id="player1T1name"  name="player1T1name"  required><br>
+              Team 2 - Player 2              :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
+              Choose - Points : <input type="radio" id="15" name="points" value="15" required><label for="15">15</label><input type="radio" id="21" name="points" value="21"><label for="21">21</label>
+              <br><button type="submit" formaction="/d.html" >Start Game</button>
+      </form>
+  </div>
+  
+  </main>
+    
+    
+  <script>
+  function ShowSingles() {document.getElementById("singlesform15").style.display = "block";document.getElementById("doublesform15").style.display = "none";}
+  function ShowDoubles() {document.getElementById("doublesform15").style.display = "block";document.getElementById("singlesform15").style.display = "none";}
+  </script>
+  
+  
+  
+  </body>
+  <footer>
+    <hr>
+        Imp Links:
+        <ul>
+          <li><a href="">Wikipedia</a></li></ul>
+      </footer>
+  </html>

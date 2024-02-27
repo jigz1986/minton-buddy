@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Badminton Buddy | Online Badminton Score Keeper</title>
+  	<link rel="stylesheet" href="style.css">
+	
+  </head>
+  <body>
+  
+  
+  <!-- Start :: Main navigation #########################################################-->
+<header>
+   <nav>
+     <div id="navbar">
+		<div id="logoImage">
+			<a href="index.html"><div id="brand"><img src="images/logo.png" style="width:60px">Minton Buddy</div></a>
+		</div>
+		
+		<div class="menu">
+	 		<a href="score_card.html"><div class="items">Score Card</div></a>
+			<a href="#"><div class="items">Host a League</div></a>
+			<a href="#"><div class="items">Forum</div></a>
+			<a href="#"><div class="items">Contact</div></a>
+	 </div>
+</div>
+</nav>
+</header>
+  
+    <!-- End  :: Main navigation #########################################################-->
+  <main>
+
+    <img src="images/singles.png" style="width: 400px;">
+
+
+  <h1> 
+    Badminton Singles ScoreCard
+  </h1>
+
+  <a href="/score_card.html"><button id="gobackhome">Start over</button></a>
+  <hr>
+
+  <p>You are about to start a Singles game of 15 points between <span id="p1"></span> (serving first) and  <span id="p2"></span>.<br>
+    Note: <span id="p3"></span> will be serving first
+<div id="spacer"></div>
+  <section id="scoring">
+  <div id="topBoard">
+    <div class="team1" id="teambox" style="justify-content: end;">
+      <div id="playerbox"><div id="First"><span id="p4"></span></div>
+      <div id="scorenumber" style="float: right;"><span id="p1Score"></span>  </div></div>
+    </div>
+
+  <div id="vs"> VS </div>
+
+  <div class="team2" id="teambox"style="justify-content: start;">
+      <div id="playerbox" style="justify-content:start;">
+          <div id="scorenumber" ><span id="p2Score"></span>  </div>
+          <div id="First" style="justify-content:start;"><span id="p5"></span></div>
+      </div>
+  </div>
+
+</div> <!-- TopBaord ends----------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+  </section>
+  
+</main>
+  
+  
+  
+  
+  
+   
+	<script>
+let params = new URLSearchParams(document.location.search);
+const p1 = params.get("P1S15");
+const p2 = params.get("P2S15");
+console.log(p1, p2);
+document.getElementById("p1").innerHTML=p1;
+document.getElementById("p2").innerHTML=p2;
+document.getElementById("p3").innerHTML=p1;
+document.getElementById("p4").innerHTML=p1;
+document.getElementById("p5").innerHTML=p2;
+
+var p1Score = 0;
+var p2Score = 0;
+document.getElementById("p1Score").innerHTML=p1Score;
+document.getElementById("p2Score").innerHTML=p2Score;
+
+
+
+  </script>
+</body>
+<footer>
+  <hr>
+      Imp Links:
+      <ul>
+        <li><a href="">Wikipedia</a></li></ul>
+    </footer>
+</html>
