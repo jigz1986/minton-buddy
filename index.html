@@ -5,96 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Badminton Buddy | Online Badminton Score Keeper</title>
- 	<link rel="stylesheet" href="style.css">
+ 	<!-- <link rel="stylesheet" href="style.css"> -->
+	<style  >
+.Server {border: 1px solid green;}
 
+.WinServer {border: 2px dashed rgb(0, 0, 0);}
+
+  </style>
   </head>
   <body>
-    <!-- Start :: Main navigation #########################################################-->
-    <header>
-     <nav>
-  <div id="navbar">
-  <div id="logoImage">
-  <a href="index.html"><div id="brand"><!-- <img src="images/logo.png" style="width:60px"> -->Minton Buddy</div></a>
-  </div>
-  <!-- Start :: Menu navigation #########################################################-->
-  <div class="menu">
-   <a href="score_card.html"><div class="items">Score Card</div></a>
-  <a href="#"><div class="items">Host a League</div></a>
-  <a href="#"><div class="items">Forum</div></a>
-  <a href="#"><div class="items">Contact</div></a>
-  </div>
-  </div>
-  </nav> 
-  </header>
-  <!-- End  :: Main navigation #########################################################-->
   
   
+  <!-- Start :: Main navigation #########################################################-->
+<header>
+   <nav>
+     <div id="navbar">
+		<div id="logoImage">
+			<a href="index.html"><div id="brand"><img src="images/logo.png" style="width:60px">Minton Buddy</div></a>
+		</div>
+		
+		<div class="menu">
+	 		<a href="score_card.html"><div class="items">Score Card</div></a>
+			<a href="#"><div class="items">Host a League</div></a>
+			<a href="#"><div class="items">Forum</div></a>
+			<a href="#"><div class="items">Contact</div></a>
+	 </div>
+</div>
+</nav>
+</header>
   
-  <br><hr>
-  
-  
+    <!-- End  :: Main navigation #########################################################-->
   <main>
-  <!-- Start :: Game Type Input #########################################################-->
-  <section id="trail1">
-    <button id="SelectionS" Class="SelectGameType" onclick="ShowSingles()">Singles</button>
-    <button id="SelectionD" Class="SelectGameType" onclick="ShowDoubles()">Doubles</button>
-      </form>
-      </div>
+  <h1> 
+    Badminton Singles ScoreCard
+  </h1>
+  <section id="mainScoreBoard">
+  <span id="team1name"></span> --  <span id="team2name"></span><br>
+  <span id="p1t1"></span>  <span id="p2t1"></span> <br> <span id="p1t2"></span> <span id="p2t2"></span> <br> <span id="points"></span>
+  <br>
+  
+    <p> 
+      Current Server = <span id="Currentserver"></span> ||
+      Serving Side: <span id="servside"></span> ||
+      Current Serving Team = <span id="ServerTeamCurrent"> </span> <br>
+      Last Server = <span id="lastserver"></span> ||
+      Last Serving Team = <span id="ServerTeamLast"></span> ||
+      Serv Reciever: <span id="ServRcvr"></span>
+<br><hr><br>
+      
+Score<br>
+
+<span id="t1Score"></span> <button onclick="t1earns()">+1</button> vs <span id="t2Score">0</span> <button onclick="t2earns()">+1</button>
+<hr>
+</section>
+
+  <div id="Reset"style="display:none"><a href="index.html">Reset</a></div>
+
+
+  <section id="battle" style="display:flex">
+
+<div id="courtLeft" style="display:flexbox; margin: 20px">
+  <p id="right1" style="width:200px; height:150px; background-color: rgba(3, 76, 212, 0.852);"></p>
+  <p id="left1" style="width:200px; height:150px; background-color: rgba(0, 255, 255, 0.747);"></p>
+
+ </div>
+
+ <div id="courtRight" style="display:flexbox;margin: 20px">
+  <p id="right2" class = "" style="width:200px; height:150px; background-color:rgba(247, 6, 74, 0.907); "></p>
+ <p id="left2" class = "" style="width:200px; height:150px; background-color:rgba(245, 14, 245, 0.994); "></p>
+
+</div>
   </section>
-  <!-- End  :: Game Type Input #########################################################-->
+</main>
   
   
-  <!-- Singles Game Div Start #################################################################################################################-->
-  <div id="singlesform15" style="background-color: rgba(0, 0, 0, 0.059); display:none;">
-      You have choosen Singles game of 15 Points. Or You may <a href="/trial.html">Start Over</a>.<br> 
-      Carry out the toss and find who will serve first. 
-      <form id="singlesGameStart" name="GameForm" >
-        Enter the name of Player 1 (1st Server):<input type="text" id="player1name" name="player1name" required><br>
-        Enter the name of Player 2(Lost Toss):<input type="text" id="player2name" name="player2name" required><br>
-        Choose Points : 
-        <input type="radio" id="15" name="points" value="15" required><label for="15">15</label>
-        <input type="radio" id="21" name="points" value="21" required><label for="21">21</label>
-        <br><button type="submit" formaction="/s.html">Start Game</button>
-      </form>
-  </div>
-  
-  
-  
-  
-  
-  <!-- Doubles Game Div Start #################################################################################################################-->
-  <div id="doublesform15" style="display:none">
-      You have choosen Doubles game OR You may <a href="/trial.html">Go Back</a>.<br> and start over. 
-      <br>Carry out the toss and find who will serve first. Enter their name as P1 in Team 1. <br>
-      Now enter the player details. 
-      <form id="singlesGameStart" name="GameForm"> Enter the following details to start <br>
-              Team 1 Name         :<input type="text" id="team1name"      name="team1name"      required  value="Alpha" ><br>
-              Team 1 - Player 1  :<input type="text" id="player1T1name"  name="player1T1name"  required> [S/He will do the firt serve]<br>
-              Team 1 - Player 2   :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
-              Team 2 Name         :<input type="text" id="team2name"      name="team2name"      required  value="Beta" ><br>
-              Team 2 - Player 1#   :<input type="text" id="player1T2name"  name="player1T2name"  required> [S/He will recieve the serv]<br>
-              Team 2 - Player 2   :<input type="text" id="player2T2name"  name="player2T2name"  required><br>
-              Choose - Points : <input type="radio" id="15" name="points" value="15" required><label for="15">15</label><input type="radio" id="21" name="points" value="21"><label for="21">21</label>
-              <br>
-              *Note: Player from Team 1 will do the server. & # Player 1 from Team 2 will recieve the serve.<br><button type="submit" formaction="/d.html" >Start Game</button>
-      </form>
-  </div>
-  
-  </main>
-    
-    
-  <script>
-  function ShowSingles() {document.getElementById("singlesform15").style.display = "block";document.getElementById("doublesform15").style.display = "none";}
-  function ShowDoubles() {document.getElementById("doublesform15").style.display = "block";document.getElementById("singlesform15").style.display = "none";}
+<script>	
+
+ 
+ 
+                  
+
   </script>
-  
-  
-  
+
+  <script src="logic1.js"></script>
+
+
   </body>
-  <footer>
-    <hr><br>
-        Imp Links:
-        <ul>
-          <li><a href="">Wikipedia</a></li></ul>
-      </footer>
-  </html>
+</html> 
