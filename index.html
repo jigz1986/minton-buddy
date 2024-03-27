@@ -14,7 +14,7 @@
      <nav>
   <div id="navbar">
   <div id="logoImage">
-  <a href="index.html"><div id="brand"><img src="images/logo.png" style="width:60px">Minton Buddy</div></a>
+  <a href="index.html"><div id="brand"><!-- <img src="images/logo.png" style="width:60px"> -->Minton Buddy</div></a>
   </div>
   <!-- Start :: Menu navigation #########################################################-->
   <div class="menu">
@@ -45,7 +45,7 @@
   
   
   <!-- Singles Game Div Start #################################################################################################################-->
-  <div id="singlesform15" style="display:none;">
+  <div id="singlesform15" style="background-color: rgba(0, 0, 0, 0.059); display:none;">
       You have choosen Singles game of 15 Points. Or You may <a href="/trial.html">Start Over</a>.<br> 
       Carry out the toss and find who will serve first. 
       <form id="singlesGameStart" name="GameForm" >
@@ -54,7 +54,7 @@
         Choose Points : 
         <input type="radio" id="15" name="points" value="15" required><label for="15">15</label>
         <input type="radio" id="21" name="points" value="21" required><label for="21">21</label>
-        <br><button type="submit" formaction="<!-- github link wont work, add a slash in live server --><!--/-->s.html">Start Game</button>
+        <br><button type="submit" formaction="/s.html">Start Game</button>
       </form>
   </div>
   
@@ -63,19 +63,20 @@
   
   
   <!-- Doubles Game Div Start #################################################################################################################-->
-  <div id="doublesform15" style="display:none;">
-      You have choosen Doubles game of 15 Points. OR You may <a href="/trial.html">Start Over</a>.<br> Carry out the
-      toss and find who will serve first. <br>
+  <div id="doublesform15" style="display:none">
+      You have choosen Doubles game OR You may <a href="/trial.html">Go Back</a>.<br> and start over. 
+      <br>Carry out the toss and find who will serve first. Enter their name as P1 in Team 1. <br>
       Now enter the player details. 
-      <form id="singlesGameStart" name="GameForm"> Enter
-              Team 1 Name                     :<input type="text" id="team1name"      name="team1name"      value="Alpha"><br>
-              Team 1 - Player 1 (1st Server) :<input type="text" id="player1T1name"  name="player1T1name"  required><br>
-              Team 1 - Player 2              :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
-              Team 2 Name                :<input type="text" id="team1name"      name="team1name"      value="Beta"><br>
-              Team 2 - Player 1              :<input type="text" id="player1T1name"  name="player1T1name"  required><br>
-              Team 2 - Player 2              :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
+      <form id="singlesGameStart" name="GameForm"> Enter the following details to start <br>
+              Team 1 Name         :<input type="text" id="team1name"      name="team1name"      required  value="Alpha" ><br>
+              Team 1 - Player 1  :<input type="text" id="player1T1name"  name="player1T1name"  required> [S/He will do the firt serve]<br>
+              Team 1 - Player 2   :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
+              Team 2 Name         :<input type="text" id="team2name"      name="team2name"      required  value="Beta" ><br>
+              Team 2 - Player 1#   :<input type="text" id="player1T2name"  name="player1T2name"  required> [S/He will recieve the serv]<br>
+              Team 2 - Player 2   :<input type="text" id="player2T2name"  name="player2T2name"  required><br>
               Choose - Points : <input type="radio" id="15" name="points" value="15" required><label for="15">15</label><input type="radio" id="21" name="points" value="21"><label for="21">21</label>
-              <br><button type="submit" formaction="<!-- github link wont work, add a slash in live server --><!--/-->d.html" >Start Game</button>
+              <br>
+              *Note: Player from Team 1 will do the server. & # Player 1 from Team 2 will recieve the serve.<br><button type="submit" formaction="/d.html" >Start Game</button>
       </form>
   </div>
   
@@ -91,7 +92,7 @@
   
   </body>
   <footer>
-    <hr>
+    <hr><br>
         Imp Links:
         <ul>
           <li><a href="">Wikipedia</a></li></ul>
