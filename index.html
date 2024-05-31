@@ -2,99 +2,268 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Badminton Buddy | Online Badminton Score Keeper</title>
- 	<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="mobile.css">
   </head>
   <body>
     <!-- Start :: Main navigation #########################################################-->
     <header>
-     <nav>
-  <div id="navbar">
-  <div id="logoImage">
-  <a href="index.html"><div id="brand"><!-- <img src="images/logo.png" style="width:60px"> -->Minton Buddy</div></a>
-  </div>
-  <!-- Start :: Menu navigation #########################################################-->
-  <div class="menu">
-   <a href="score_card.html"><div class="items">Score Card</div></a>
-  <a href="#"><div class="items">Host a League</div></a>
-  <a href="#"><div class="items">Forum</div></a>
-  <a href="#"><div class="items">Contact</div></a>
-  </div>
-  </div>
-  </nav> 
-  </header>
-  <!-- End  :: Main navigation #########################################################-->
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">
+            <img class="navimag" src="https://i.postimg.cc/XYL83D8W/logo.png">
+            <span id="brand">Minton Buddy</span>
+          </a>
+          <a class="navlinks" class="active" href="index.html">Home</a>
+          <a class="navlinks" href="#">Host for us</a>
+          <a class="navlinks" href="#">Forum</a>
+          <a class="navlinks contactus" href="#">
+            <img class="navimag" src="images/phn.png" style="margin-right:12px;">Contact </a>
+          <a href="javascript:void(0);" class="icon resIcon" onclick="myFunction()">
+            <img class="bun" src="https://i.postimg.cc/WpqXr82m/bun.png">
+            </i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- End  of header tag
+  mmmm            mmmm	      aaaaa		IIIIIIIIIIIIIIII	NNNN 	   NN
+  mm mm          mm mm 	   aaa    aaa	IIIIIIIIIIIIIIII	NN NN	   NN
+  mm  mm        mm  mm	  aaa      aaa		   II			NN  NN     NN
+  mm   mm      mm   mm	 aaaaaaaaaaaaa		   II			NN   NN    NN
+  mm    mm    mm    mm	aaaaaaaaaaaaaa	       II			NN    NN   NN
+  mm     mm  mm     mm	aaa        aaa	       II			NN     NN  NN
+  mm      mmmm      mm  aaa        aaa	IIIIIIIIIIIIIII		NN      NN NN
+  mm                mm	aaa        aaa	IIIIIIIIIIIIIIII	NN       NNNN 
   
-  
-  
-  <br><hr>
-  
+  :: Main navigation #########################################################-->
+  -->
   
   <main>
-  <!-- Start :: Game Type Input #########################################################-->
-  <section id="trail1">
-    <button id="SelectionS" Class="SelectGameType" onclick="ShowSingles()">Singles</button>
-    <button id="SelectionD" Class="SelectGameType" onclick="ShowDoubles()">Doubles</button>
-      </form>
-      </div>
-  </section>
-  <!-- End  :: Game Type Input #########################################################-->
+      <section id="trail1">
+        <bR>
+        <div class="trailText">
+          <p class="one">Welcome to</p>
+          <h1>Minton <span style="color:#39DB4A">Buddy</span>
+          </h1>
+          <p class="two">A simple web-based App to track scores of Badminton Game. <br>
+          <section id="scroll"></section> More Features coming soon! </p>
+        </div>
+        <div class="trailBanner">
+          <img src="https://i.postimg.cc/vHRXvnBJ/banner.png">
+        </div>
+      </section>
+      <section class="buttons">
+        <p class="select">Select Your Game Type? </p>
+        <br>
+        <div class="gameSelectors">
+          <button id="SelectionS" Class="SelectGameType" onclick="ShowSingles()">Singles Game</button>
+          <button id="SelectionD" Class="SelectGameType" onclick="ShowDoubles()">Doubles Game</button>
+        </div>
+      </section>
+      <!-- End  :: Game Type Input #########################################################-->
+	  
+	  
+	  
+	  
+	  
+      <!-- Singles Game Div Start 
+  Normally hidden, this form pops up when we click on 'Singles' button above
   
+  #############################################################################-->
+      <section id="singlesform" style="display:none;">
+        <h4>You have choosen Singles game OR You may <a href="index.html">Start Over.</a>
+        </h4>
+        <p>Note:
+        <ul class="Notes">
+          <li>You may visit <a href="rules.html">Rules</a> for Badminton Rules. </li>
+          <li>Carry out the toss and find who will serve first.</li>
+          <li>Enter the first servers's name as Player 1.</li>
+          <li>Enter the serve reciever's name as Player 2.</li>
+          <li>Undo functionality is not yet available</li>
+        </ul>
+        </p>
+        <br>
+        <h5>Enter the following details to start </h5>
+        <div class="doublesform">
+          <div class="textform">
+            <form id="singlesGameStart" name="GameForm">
+              <div class="row">
+                <div class="cloumn">Player 1 (Toss Won) <br>
+                  <input class="textip" type="text" id="player1name" name="player1name" required>
+                </div>
+                <div class="cloumn">Player 2 (Toss Lost) <br>
+                  <input class="textip" type="text" id="player2name" name="player2name" required>
+                </div>
+              </div>
+			  <br>
+              <div class="Crow">
+                <span class="ChoosePoints">Choose - Points</span>
+                <div class="row">
+                  <div class="Prow">
+                    <label class="radio-button" for="15">
+                      <input type="radio" class="radio" id="15" name="points" value="15" required>
+                      <span class="radio1"></span> 15 </label>
+                  </div>
+                  <div class="Prow">
+                    <label class="radio-button" for="21">
+                      <input type="radio" class="radio" id="21" name="points" value="21">
+                      <span class="radio1"></span> 21 </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="formimage">
+            <img class="bannerImage" src="https://i.postimg.cc/bwpT7j1L/singles-Banner.png">
+          </div>
+        </div>
+        <div class="actionable">
+          <button id="start" type="submit" formaction="singles.html">Start Game</button>
+          </form>
+          <button id="cancel" onclick="reset()">Cancel</button>
+        </div>
+      </section>
+      <!-- Doubles Game Div Start 
+	  
+	  
+	        <!-- Doubles Game Div Start 
+  Normally hidden, this form pops up when we click on 'Doubles' button above
   
-  <!-- Singles Game Div Start #################################################################################################################-->
-  <div id="singlesform15" style="background-color: rgba(0, 0, 0, 0.059); display:none;">
-      You have choosen Singles game of 15 Points. Or You may <a href="/trial.html">Start Over</a>.<br> 
-      Carry out the toss and find who will serve first. 
-      <form id="singlesGameStart" name="GameForm" >
-        Enter the name of Player 1 (1st Server):<input type="text" id="player1name" name="player1name" required><br>
-        Enter the name of Player 2(Lost Toss):<input type="text" id="player2name" name="player2name" required><br>
-        Choose Points : 
-        <input type="radio" id="15" name="points" value="15" required><label for="15">15</label>
-        <input type="radio" id="21" name="points" value="21" required><label for="21">21</label>
-        <br><button type="submit" formaction="/s.html">Start Game</button>
-      </form>
-  </div>
-  
-  
-  
-  
-  
-  <!-- Doubles Game Div Start #################################################################################################################-->
-  <div id="doublesform15" style="display:none">
-      You have choosen Doubles game OR You may <a href="/trial.html">Go Back</a>.<br> and start over. 
-      <br>Carry out the toss and find who will serve first. Enter their name as P1 in Team 1. <br>
-      Now enter the player details. 
-      <form id="singlesGameStart" name="GameForm"> Enter the following details to start <br>
-              Team 1 Name         :<input type="text" id="team1name"      name="team1name"      required  value="Alpha" ><br>
-              Team 1 - Player 1  :<input type="text" id="player1T1name"  name="player1T1name"  required> [S/He will do the firt serve]<br>
-              Team 1 - Player 2   :<input type="text" id="player2T1name"  name="player2T1name"  required><br>
-              Team 2 Name         :<input type="text" id="team2name"      name="team2name"      required  value="Beta" ><br>
-              Team 2 - Player 1#   :<input type="text" id="player1T2name"  name="player1T2name"  required> [S/He will recieve the serv]<br>
-              Team 2 - Player 2   :<input type="text" id="player2T2name"  name="player2T2name"  required><br>
-              Choose - Points : <input type="radio" id="15" name="points" value="15" required><label for="15">15</label><input type="radio" id="21" name="points" value="21"><label for="21">21</label>
-              <br>
-              *Note: Player from Team 1 will do the server. & # Player 1 from Team 2 will recieve the serve.<br><button type="submit" formaction="/d.html" >Start Game</button>
-      </form>
-  </div>
-  
-  </main>
-    
-    
-  <script>
-  function ShowSingles() {document.getElementById("singlesform15").style.display = "block";document.getElementById("doublesform15").style.display = "none";}
-  function ShowDoubles() {document.getElementById("doublesform15").style.display = "block";document.getElementById("singlesform15").style.display = "none";}
-  </script>
-  
-  
-  
+  #############################################################################-->
+	  
+	 
+      <section id="doublesform1" style="display:none">
+        <h4>You have choosen Doubles game OR You may <a href="index.html">Start Over.</a>
+        </h4>
+        <div class="textformInner">
+          <p>Note:
+          <ul class="Notes">
+            <li>You may visit <a href="rules.html">Rules</a> for Badminton Rules. </li>
+            <li>Carry out the toss and find who will serve first.</li>
+            <li>Enter the first servers's name as Player 1.</li>
+            <li>Enter the serve reciever's name as Player 2.</li>
+            <li>Undo functionality is not yet available</li>
+          </ul>
+          </p>
+          <br>
+          <h4>Enter the following details to start </h4>
+        </div>
+        <div class="doublesform">
+          <div class="textform">
+            <form id="singlesGameStart" name="GameForm">
+              <div class="row">
+                <div class="cloumn">
+                  <div class="head">Team 1 Name</div>
+                  <div class="input">
+                    <input class="textip" type="text" id="team1name" name="team1name" required>
+                  </div>
+                </div>
+                <div class="cloumn">Team 2 Name <br>
+                  <input class="textip" type="text" id="team2name" name="team2name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cloumn">Team 1 - Player 1 <br>
+                  <input class="textip" type="text" id="player1T1name" name="player1T1name" required>
+                </div>
+                <div class="cloumn">Team 2 - Player 1 <br>
+                  <input class="textip" type="text" id="player2T1name" name="player2T1name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cloumn">Team 1 - Player 2 <br>
+                  <input class="textip" type="text" id="player1T2name" name="player1T2name" required>
+                </div>
+                <div class="cloumn">Team 2 - Player 2 <br>
+                  <input class="textip" type="text" id="player2T2name" name="player2T2name" required>
+                </div>
+              </div>
+			    <br>
+              <div class="Crow">
+                <span class="ChoosePoints">Choose - Points</span>
+                <div class="row">
+                  <div class="Prow">
+                    <label class="radio-button" for="15">
+                      <input type="radio" id="15" class="radio" name="points" value="15" required>
+                      <span class="radio1"></span>15 </label>
+                  </div>
+                  <div class="Prow">
+                    <label class="radio-button" for="21">
+                      <input type="radio" id="21" class="radio" name="points" value="21">
+                      <span class="radio1"></span>21 </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="formimage">
+            <img class="bannerImage" src="https://i.postimg.cc/c4QhkJtr/doubles-Banner.png">
+          </div>
+        </div>
+        <div class="actionable">
+          <button id="start" type="submit" formaction="doubles.html">Start Game</button>
+          </form>
+          <button id="cancel" onclick="reset()">Cancel</button>
+        </div>
+      </section>
+    </main>
+    <!---------------------------------------------------
+  END
+  END
+  END
+  END
+  END
+  END
+  END
+  END
+  END---------------------------------------------->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      function reset() {
+        document.getElementById("doublesform1").style.display = "none";
+        document.getElementById("singlesform").style.display = "none";
+      }
+
+      function ShowSingles() {
+        document.getElementById("singlesform").style.display = "block";
+        document.getElementById("doublesform1").style.display = "none";
+        /* var element = document.getElementById("scroll");
+    element.scrollIntoView(true, { behavior: 'smooth'});
+  		element.style.margin = "100px 0px 0px 0px"; */
+      }
+
+      function ShowDoubles() {
+        document.getElementById("doublesform1").style.display = "block";
+        document.getElementById("singlesform").style.display = "none";
+        // var element = document.getElementById("scroll");
+        // element.scrollIntoView(true, { behavior: 'smooth'});
+        // element.style.margin = "100px 0px 0px 0px";
+      }
+    </script>
   </body>
+  <div class="divbeforefooter"></div>
   <footer>
-    <hr><br>
-        Imp Links:
-        <ul>
-          <li><a href="">Wikipedia</a></li></ul>
-      </footer>
-  </html>
+    <div class="topfoot">
+      <a href="index.html">
+        <img class="navimag" src="https://i.postimg.cc/XYL83D8W/logo.png">
+        <span id="brand">Minton Buddy</span>
+      </a>
+    </div>
+    <div class="topfoot">
+      <p>Imp Links <br>
+        <a href="">Wikipedia</a>
+      </p>
+    </div>
+  </footer>
+</html>
