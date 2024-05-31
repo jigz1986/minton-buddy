@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Badminton Buddy | Online Badminton Score Keeper</title>
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" href="game.css">
+	
+    <style>
+      .Server {
+        border: 1px solid green;
+      }
+
+      .WinServer {
+        border: 2px dashed rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start :: Main navigation #########################################################-->
+ <header>
+
+  <nav>
+   <div class="topnav" id="myTopnav">
+
+    <a href="index.html"> <img class="navimag" src="images/logo.png">
+     <span id="brand">Minton Buddy</span> </a>
+    <a class="navlinks" class="active" href="index.html">Home</a>
+    <a class="navlinks" href="#">Host for us</a>
+    <a class="navlinks" href="#">Forum</a>
+    <a class="navlinks contactus" href="#"><img class="navimag" src="images/phn.png" style="margin-right:12px;">Contact</a>
+
+    <a href="javascript:void(0);" class="icon resIcon" onclick="myFunction()"> <img class="bun" src="images/bun.png"></i></a>
+   </div>
+  </nav>
+ </header>
+ <!-- End  :: Main navigation #########################################################-->
+   
+   <main>
+      <h1> Badminton Singles ScoreCard </h1>
+      <section id="mainScoreBoard">
+        
+			<section>
+			<div class="playersNames">
+			<span id="p1" class="p1 player"></span>  -- 
+			<span id="p2" class="p2 player"></span> 
+			<br>
+            <span id="points"></span>
+			</div>
+          
+<!----- --		 
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout
+Inentionally left blank to match doubles HTML layout -->
+		 
+		 
+		 <div class="vitals">
+            <p> Current Server = <span id="Currentserver"></span> 
+			|| Serving Side: <span id="servside"></span>
+<!-- Doubles match line omit ------------------------------------------>			
+			<br> 
+			Last Server = <span id="lastserver"></span> 
+<!-- Doubles match line omit ------------------------------------------>	
+			|| Serv Reciever: <span id="ServRcvr"></span>
+            </p>
+            <br>
+            <hr>
+            <br>
+          </div>
+			</section>
+			
+			
+			<section> Scores <br>
+				<span id="p1Score" class="score1"></span>
+				<button id="p1earns" class="beta">+1</button> 
+				vs 
+				<span id="p2Score" class="score2">0</span>
+				<button id="p2earns" class="beta">+1</button>
+			</section>
+		</section>
+		
+		
+<!---------------------------------------MAIN COURT--------->
+	<section id="battle">
+          <div id="courtLeft" style="display:flexbox; margin: 20px">
+            <p id="left1" class="court"></p>
+            <p id="right1" class="court" style="background-color: green;"></p>
+          </div>
+          <div id="courtRight" style="display:flexbox;margin: 20px">
+            <p id="right2" class="court"></p>
+            <p id="left2" class="court"></p>
+          </div>
+        </section>
+      
+	  
+      <div id="Reset" style="display:none">
+        <a href="index.html">Reset</a>
+      </div>
+	  
+    </main>
+
+    <script src="singles.js"></script>
+  </body>
+</html>

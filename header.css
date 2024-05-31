@@ -1,0 +1,107 @@
+/* Header & Footer CSS */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	background-color: #e7ffe7;
+}
+
+body {
+	margin: auto;
+	width: 100%;
+	font-family: "inter" ,"Poppins", sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+main {
+	width: 80%;
+	    margin-top: 18vh;
+    margin-left: auto;
+    
+    margin-right: auto;
+}
+
+nav{display:flex; width:100%; position:fixed; top:0; left:0;}
+
+.topnav { 
+     height: 100px;
+	  width:100%;
+	  box-shadow: 0px 7px 8px 3px #8d8d8d;
+ display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navimag {width: 5vh;
+    height: auto;
+    margin-right: 1vw;}
+
+.topnav a {
+	width: 14%;
+	float: left;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+       color: #10b77b;
+    background-color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.mainnav {display: flex}
+
+.divbeforefooter {
+    margin-top: 4%;
+    width: 100%;
+    border: 4px solid #98e4bf;
+}
+	
+footer {
+	width: 100%;
+    padding: 0px 10%;
+    margin-left: auto;
+	 margin-right: auto;
+    
+	padding-bottom:2%;
+	padding-top: 5%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.topfoot {
+	display: inline-flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    color: green;
+} 	
+
+footer > a {
+    display: flex;
+    color: #004029;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}

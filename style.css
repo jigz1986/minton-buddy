@@ -1,0 +1,213 @@
+/* REFER HEADER.CSS file for header & footer css */
+
+
+section#trail1
+{display: flex;
+width: 100%;
+    margin: 40px auto;
+	
+
+}
+
+div.trailText {
+	display:inline-block;
+	margin: auto 0px;
+	width: 60%;
+	color:#202020;
+}
+
+.trailText > p.one {font-size:30px;;
+font-family:"Inter", sans-serif;
+}
+
+h1 {font-family:"Inter", sans-serif;
+font-size:48px;
+display:block;
+margin-top:10px;
+margin-bottom: 40px;
+color: #202020;
+}
+
+.trailText > p.two {font-size:24px
+font-family:"Inter", sans-serif;}
+
+
+
+.trailBanner {
+	display:inline-flex;
+	justify-content: center;
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.trailBanner > img {max-width: 80%;}
+
+p.select {font-size: 24px;  font-family: 'Poppins';}
+
+.buttons{  
+display: flex;
+    color: green;
+    align-items: center;
+}
+
+
+
+.gameSelectors {
+  display: flex;
+    padding: 10px 20px;
+}
+
+.SelectGameType {       
+	margin: auto 10px;
+    display: inline-flex;
+    max-width: 310px;
+    width: 27vw;
+    background-position: center;
+    height: 100px;
+    background-color: #00000000;
+    align-items: center;
+	justify-content: center;
+	border:4px solid #39DB4A;
+	border-radius: 32px;
+    }
+
+/*
+#SelectionS {	 background-image: url(https://i.postimg.cc/ydknLX0H/1h.png);}
+#SelectionD {    background-image: url(https://i.postimg.cc/nrm2JFdS/2h.png);}
+#SelectionS:hover {    background-image: url(https://i.postimg.cc/438BvF7P/1.png);filter: drop-shadow(0px 0px 4px #202020);}
+#SelectionD:hover {    background-image: url(https://i.postimg.cc/ydtjtgTS/2.png);filter: drop-shadow(0px 0px 4px #202020);}
+*/
+
+
+section#singlesform , section#doublesform1{
+	backdrop-filter: blur(20px);
+    position: fixed;
+    left: 0;
+    color: #0C8900;
+    display: block;
+  background-image: linear-gradient(to right, #CBEDE1 0%, #D1F1D8 50%, #E7FFE7 100%); 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+	overflow: scroll;
+}
+
+
+.doublesform {
+     padding: 3vw 2vh;
+}
+
+.textform {
+	width:60%;
+}
+
+.formimage {
+	width:40%;
+	display:block;
+	margin:auto}
+
+	
+.formIntro {
+	font-family:"Inter";
+	font-weight:300;
+	font-size:18px;
+}
+h4{font-size: 22px; font-weight:600; font-family:"Cherry Swash", serif;}
+
+
+a {
+    color: #010d00;
+}
+
+.Notes {
+	    font-weight: 300;
+  font-size: 16px;
+}
+
+
+span.ChoosePoints {
+    font-family: 'Cherry Swash';
+    font-size: 20px;
+}
+
+
+.row {
+	display:flex;
+}	
+
+.cloumn {
+	font-size: 20px;
+ font-family: 'Cherry Swash';
+    display: block;
+    width: 100%;
+    margin: 4px 8px;
+    padding: 2px 4px;
+}
+
+input.textip { 
+	width: 100%;	
+    border-radius: 8px;
+    padding-left: 10pt;
+    height: 36px;
+    color: #0c8900;
+    border: 0.6px #b7b7b7 solid;
+}
+
+.Crow{ width: 100%;
+    display: inline-block;}
+	
+	.Prow {
+    display: inline-flex;
+    margin: 4px 30px;
+}
+
+Prow.input{
+border:1px solid black;}
+
+.actionable {
+	width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 12px;
+	
+}
+
+.bannerImage
+{
+	position: absolute;
+    max-width: 300px;
+    height: auto;
+    margin-top: 0;
+    top: 20%;
+    left: 60%;
+    overflow: hidden;
+}
+
+button#start {
+    background-color: #0C8900;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    width: 160px;
+    color: white;
+    font-family: 'Poppins';
+	font-size: 14px;
+    font-weight: 600;
+}
+
+button#cancel {
+	background: #505050;
+  padding: 16px;
+    border-radius: 12px;
+    border: none;
+    width: 160px;
+    color: white;
+    font-family: 'Poppins';
+	font-size: 14px;
+    font-weight: 600;
+}
